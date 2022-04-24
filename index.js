@@ -51,11 +51,11 @@ Express.post("/shorten", (request, response) => {
     "Content-Type": "text/plain"
   })
   if (search == undefined) {
-    let url_id = id()
-    shortenURL = url_id
+    let urlID = id()
+    shortenURL = urlID
     try {
       DatabaseQueries.Insert.run({
-        ID:      url_id,
+        ID:      urlID,
         content: request.body.url,
         date:    formatTimestamp((new Date()).getTime())
       })
@@ -70,8 +70,8 @@ Express.post("/shorten", (request, response) => {
   response.end()
 })
 
-Express.get("/s/:url_id", (request, response) => {
-  let row = DatabaseQueries.Select.ID.get(request.params.url_id)
+Express.get("/s/:urlID", (request, response) => {
+  let row = DatabaseQueries.Select.ID.get(request.params.urlID)
   if (row == undefined) {
     response.writeHeader(200, {
       "Content-Type": "text/plain"
