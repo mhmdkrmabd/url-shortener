@@ -22,7 +22,7 @@ And that's it! 🥳
 
 ### Change the port
 
-    Inside `index.js`, there's a constant variable called `Port`, change the value to any port number that suits you.
+    Inside [`index.js`](https://github.com/mhmdkrmabd/url-shortener/blob/main/index.js#L8), there's a constant variable called `Port`, change the value to any port number that suits you.
 
 ### Bonus tip
 
