@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link rel="stylesheet" href="assets/style.css">
+    <script src="assets/jquery.js" charset="utf-8"></script>
+    <script src="assets/ui.js" charset="utf-8"></script>
+    <title>NodeJS URL Shorten</title>
+  </head>
+
+  <body>
+    <center>
+      <div class="title">NodeJS URL Shortener</div>
+      <input id="url" type="text" name="url" placeholder="https://www.google.com" autocomplete="off" autofocus />
+      <button id="shorten" type="button">Shorten!</button>
+    </center>
+    <footer>
+      Made with ☕ by <a href="https://github.com/mhmdkrmabd/url-shortener" target="_blank"><strong>Mohammaed Abu Baker</strong></a>
+      </footer>
+
+    <dialog id="dialog">
+      <article>
+        <header>
+          <a href="#close" aria-label="Close" class="close" onclick="document.getElementById('dialog').removeAttribute('open')"></a>
+          Shorten process has been completed!
+        </header>
+        <p id="result">
+        </p>
+      </article>
+    </dialog>
+  </body>
+
+</html>
